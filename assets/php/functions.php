@@ -2,6 +2,19 @@
 include('db.php');
 connect_home();
 
+//CURRENT PAGE URL
+function curPageURL() {
+ $pageURL = 'http';
+ if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+ $pageURL .= "://";
+ if ($_SERVER["SERVER_PORT"] != "80") {
+  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+ } else {
+  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+ }
+ return $pageURL;
+echo $pageURL;
+}
 
 // GET CONTENT
 function content($category,$sort){
@@ -62,6 +75,15 @@ function images($content_id,$limit){
 	while($row = mysql_fetch_array($result,MYSQL_ASSOC)){
 		$img[$content_id][] = $row['img'];
 	}
+}
+
+//GET CATEGORY NAME
+function category_name($cat){
+	$query 		=	"SELECT name FROM category WHERE abbrev = '$cat'";
+	$result		=	mysql_query($query);
+	
+	$name 		=	mysql_fetch_row($result);
+	return $name[0];
 }
 
 ?>

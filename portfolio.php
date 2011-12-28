@@ -1,3 +1,4 @@
+<? include('assets/php/functions.php');?>
 <?
 	$category = $_REQUEST['c'];		if(!$category){$category = '';}
 	$sort = $_REQUEST['s'];			if(!$sort){$sort = '';}
@@ -13,12 +14,13 @@
 		rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 	<![endif]-->
+	<base href="<? echo curPageURL(); ?>" />
 		
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Portfolio | Meghan Welford</title>
+	<title>Portfolio | Meghan Welford | <? echo category_name($category);?></title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Meghan Welford">
 	
@@ -31,7 +33,6 @@
 </head>
 <body>
 	<? 
-		include('assets/php/functions.php');
 		include ('assets/php/header.php');
 	?>
 	

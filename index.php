@@ -1,3 +1,5 @@
+<? include('assets/php/functions.php');?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
    "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -8,7 +10,7 @@
 		rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 	<![endif]-->
-	<base href="http://localhost:8888/meghanwelford/" target="_blank" />
+	<base href="<? echo curPageURL(); ?>"/>
 		
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -27,13 +29,11 @@
 </head>
 <body>
 	<?
-	 
-		include('assets/php/functions.php');
 		include ('assets/php/header.php');
 	?>
 	
 	<h1 class="mw">Meghan Welford</h1>
-	<? echo $_SERVER['ORIG_PATH_INFO']; ?>
+	
 	
 	<!-- LEFT COLUMN -->
 	<div class="left">

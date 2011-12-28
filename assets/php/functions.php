@@ -61,7 +61,8 @@ function content($category,$sort){
 // GET ASSOCIATED IMAGES
 function images($content_id,$limit){
 	global $img;
-	$query 		 =	"SELECT img, priority FROM ";
+	global $image;
+	$query 		 =	"SELECT img, priority, link, description, title FROM ";
 	$query 		.=	"content_images ";
 	$query		.=	"WHERE content_id = '$content_id' ";
 	$query 		.=	"ORDER BY priority ASC, date DESC ";
@@ -74,6 +75,8 @@ function images($content_id,$limit){
 	
 	while($row = mysql_fetch_array($result,MYSQL_ASSOC)){
 		$img[$content_id][] = $row['img'];
+		
+		$image[] = $row;
 	}
 }
 

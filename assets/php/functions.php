@@ -15,12 +15,13 @@ function content($category,$sort){
 	if($category != ''){
 		$query		.=	"FROM content_category cc JOIN content c ";
 		$query		.=	"ON cc.content_id = c.id ";
+		$query		.=	"WHERE cc.category_abbrev = '$category' ";
 		}	
 	//IF CATEGORY DOES NOT EXIST, GET ALL
 	else{
 		$query		.=	"FROM content c ";
 		}
-	
+			
 	//IF SORT IS SPECIFIED
 	if($sort != ''){
 		$query		.=	"ORDER BY $sort ";

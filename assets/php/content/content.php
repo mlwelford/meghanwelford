@@ -1,5 +1,6 @@
 <?
-	content('','');
+	// HOME PAGE CONTENT - DISPLAY ALL
+	content($category,$sort);
 	foreach($content as $c): 
 	?>
 	

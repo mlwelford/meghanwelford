@@ -1,3 +1,8 @@
+<?
+	$category = $_REQUEST['c'];		if(!$category){$category = '';}
+	$sort = $_REQUEST['s'];			if(!$sort){$sort = '';}
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
    "http://www.w3.org/TR/html4/strict.dtd">
 
@@ -8,7 +13,6 @@
 		rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 	<![endif]-->
-	<base href="http://localhost:8888/meghanwelford/" target="_blank" />
 		
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -26,20 +30,17 @@
 	<script type="text/javascript">stLight.options({publisher:'376f0fc1-9bad-4a27-ac42-7d790c6a7b78'});</script>
 </head>
 <body>
-	<?
-	 
+	<? 
 		include('assets/php/functions.php');
 		include ('assets/php/header.php');
 	?>
 	
 	<h1 class="mw">Meghan Welford</h1>
-	<? echo $_SERVER['ORIG_PATH_INFO']; ?>
 	
 	<!-- LEFT COLUMN -->
 	<div class="left">
 		<!-- MAIN CONTENT -->
 		<? 
-		$category = ''; $sort = '';
 		include('assets/php/content/content.php');?>
 	</div>
 	

@@ -24,7 +24,10 @@
 	<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'376f0fc1-9bad-4a27-ac42-7d790c6a7b78'});</script>
 </head>
 <body>
-	<? include ('assets/php/header.php');?>
+	<? 
+		include('assets/php/functions.php');
+		include ('assets/php/header.php');
+	?>
 	
 	<h1 class="mw">Meghan Welford</h1>
 	
@@ -38,12 +41,7 @@
 		</div>
 		
 		<!-- PREVIEW -->
-		<div class="content" id="main">
-			<a href="http://css3.meghanwelford.com"><img src="assets/images/samples/border_radius.png" alt="Border Radius" width="100%"></a>
-			<h2>Preview</h2>
-			<p>It's not perfect, but here's a little taste of what I can do!</p>
-			<p><a href="">Check it out  &rarr;</a></p>
-		</div>
+		<? include('assets/php/content/content.php');?>
 		
 	</div>
 	

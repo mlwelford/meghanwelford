@@ -41,7 +41,7 @@ ul.header{
 		display: inline;
 	}
 	
-	.header a:link{
+	.header a:link, .header a:visited{
 		font-weight: 300;
 		display: inline-block;
 		text-transform: uppercase;
@@ -118,7 +118,7 @@ h1.mw{
 		}
 		
 		/*LINKS*/
-		.content a:link{
+		.content a:link, .content a:visited{
 			font-weight: 500;
 			color: #BA4B37;
 			text-decoration: none;

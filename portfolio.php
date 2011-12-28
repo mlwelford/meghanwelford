@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Portfolio | Meghan Welford | <? echo category_name($category);?></title>
+	<title>Meghan Welford | Portfolio <? if($category!=''){echo '| ' . category_name($category);}?></title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Meghan Welford">
 	
@@ -36,7 +36,7 @@
 		include ('assets/php/header.php');
 	?>
 	
-	<h1 class="mw">Meghan Welford</h1>
+	<h1 class="mw"><? if($category!=''){echo category_name($category);}else{echo 'Meghan Welford';}?></h1>
 	
 	<!-- LEFT COLUMN -->
 	<div class="left">

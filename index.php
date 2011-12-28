@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Portfolio | Meghan Welford</title>
+	<title>Meghan Welford | Portfolio</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Meghan Welford">
 	

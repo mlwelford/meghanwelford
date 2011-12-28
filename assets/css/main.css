@@ -1,33 +1,120 @@
 /*
 	RED:		#BA4B37
-	YELLOW:		#CFCDB5
+	TAN:		#CFCDB5
 	LT BLUE:	#83B2A9	
 	DK BLUE: 	#2F5063
-	TAN:		#CFB654
+	YELLOW:		#CFB654
 */
 
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush|News+Cycle|Quicksand:400,300,700|Josefin+Slab:600italic,600,300italic,400italic,400,700italic,100,100italic,700,300|Cabin:700,500,400,600,700italic,400italic,500italic,600italic|Questrial|Abel|Josefin+Sans:100italic,300italic,600,100,600italic,700italic,400italic,400,700,300|Petrona|Actor|Amaranth:400,700italic,700,400italic|Arizonia|Buda:300|Comfortaa:400,300,700|Cookie|Dancing+Script:700,400|Dawning+of+a+New+Day|Didact+Gothic|Francois+One|Gruppo|Jura:400,300,500,600|Open+Sans:400italic,700italic,800italic,300italic,600italic,400,800,700,600,300|Raleway:100|Squada+One|Terminal+Dosis:400,200,300,500,600,700,800|Varela|Varela+Round|Zeyada);
+
 html{
-	background: #BA4B37;
+	background: #eee;
 }
 
-/*.test{
-	width: 100px;
-	height: 100px;
-	display: block;
+body{
+	margin: auto;
+	width: 75%;
+}
+
+/*Meghan Welford Heading*/
+h1.mw{
+	margin: 30px 0;
+	font-size: 800%;
+	font-weight: bold;
+	text-shadow: 2px 2px 0px rgba(255, 255, 255, 1);
+	text-align: center;
+	font-family: 'Cookie', cursive;
+	/*z-index: 1;*/
+}
+
+/*Content DIVs*/
+.content{
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	background:#fff;
+	position:relative;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.2);
+	box-shadow:0 1px 3px rgba(0,0,0,0.2);
+}
+	.content img{
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		-moz-border-radius-topleft:6px;
+		-moz-border-radius-topright:6px;
+		-webkit-border-top-right-radius: 6px;
+		-webkit-border-top-left-radius: 6px;
+	}
+	.content h2{
+		padding: 30px 30px 20px 30px;
+		color: #222;
+		font-size: 150%;
 	}
 
-	#a{
-		background: #BA4B37;
+	.content h3{
+		padding: 30px 30px 20px 30px;
+		color: #222;
+	}
+	
+	.content h3.share {
+		font-size: 200%;
+		font-family: 'Cookie', cursive;
+	}
+
+	.content p, .content ul, .content li{
+		padding: 0 30px 0 30px;
+		font-size: 95%;
+		color: #999;
+		font-weight: 300;
+		line-height: 150%;
+	}
+		.content p span{
+			color: #2F5063;
+			font-weight: 400;
 		}
-	#b{
-		background: #CFCDB5;
+		
+		/*LINKS*/
+		.content a:link{
+			color: #444;
+			text-decoration: none;
+		}
+		
+		.content a:hover{
+			text-decoration: underline;
+		}
+		
+		/*LIST*/
+		.content ul{
+			margin-top: 10px;
+		}
+		
+		.content li{
+			list-style-type: circle;
+			list-style-position: inside;
+		}
+		
+		.content li a:link{
+			text-decoration: none;
+			color: #999;
+		}
+		
+		.content li a:hover{
+			text-decoration: underline;
+			color: #000;
+		}
+
+/*Specific Content DIVs*/
+	.right{
+		width: 30%;
+		float: right;
 	}
-	#c{
-		background: #83B2A9;
+	
+	.left{
+		width: 65%;
+		float: left;
 	}
-	#d{
-		background: #2F5063;
-	}
-	#e{
-		background: #CFB654;
-	}*/

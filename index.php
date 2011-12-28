@@ -34,13 +34,6 @@
 	<!-- LEFT COLUMN -->
 	<div class="left">
 		<!-- MAIN CONTENT -->
-		<div class="content" id="main">
-			<h2>Under Construction</h2>
-			<p>My portfolio is Underway!  Please be patient.  Any Questions? </p>
-			<p><a href="mailto:mlwelford@gmail.com">Contact Me &rarr;</a></p>
-		</div>
-		
-		<!-- PREVIEW -->
 		<? include('assets/php/content/content.php');?>
 		
 	</div>

@@ -81,6 +81,16 @@ h1.mw{
 	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.2);
 	box-shadow:0 1px 3px rgba(0,0,0,0.2);
 }
+	.content .image{
+		width: 100%;
+		height: 200px;
+		overflow:hidden;
+	}
+	
+	.content .image:hover{
+		height: 300px;
+	}
+	
 	.content img{
 		border-top-left-radius: 6px;
 		border-top-right-radius: 6px;
@@ -89,6 +99,16 @@ h1.mw{
 		-webkit-border-top-right-radius: 6px;
 		-webkit-border-top-left-radius: 6px;
 	}
+	
+	/*IMAGE HEIGHT TRANSITIONS*/
+	.content .image, .content .image:hover{
+		transition: height 0.5s;
+		-moz-transition: height 0.5s; /* Firefox 4 */
+		-webkit-transition: height 0.5s; /* Safari and Chrome */
+		-o-transition: height 0.5s; /* Opera */
+	}
+	
+	
 	.content h2{
 		padding: 30px 30px 20px 30px;
 		color: #222;

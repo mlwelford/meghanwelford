@@ -13,14 +13,55 @@ html{
 }
 
 body{
-	margin: auto;
+	margin: 60px auto 60px auto;
 	width: 75%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8em;
 }
+
+/*Header*/
+ul.header{
+	display: block;
+	position:fixed;
+	top: 0;
+	left: 0;	
+	width: 100%;
+	background: #222;
+	-moz-opacity:.9; filter:alpha(opacity=90); opacity:.90;
+	border-bottom: thin solid #eee;
+	padding: 0 12.5%;
+	/*border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		-moz-border-radius-bottomleft:6px;
+		-moz-border-radius-bottomright:6px;
+		-webkit-border-bottom-right-radius: 6px;
+		-webkit-border-bottom-left-radius: 6px;*/
+}
+	.header li{
+		display: inline;
+	}
+	
+	.header a:link{
+		font-weight: 300;
+		display: inline-block;
+		text-transform: uppercase;
+		color: #aaa;
+		text-decoration: none;
+		padding: 15px;
+		border-right: #555 solid 1px;
+	}
+	
+	.header a:hover{
+		color: #eee;
+		border-right: #eee solid 1px;
+		margin-right: 0;
+		
+	}
 
 /*Meghan Welford Heading*/
 h1.mw{
 	margin: 30px 0;
-	font-size: 800%;
+	font-size: 500%;
 	font-weight: bold;
 	text-shadow: 2px 2px 0px rgba(255, 255, 255, 1);
 	text-align: center;
@@ -30,11 +71,9 @@ h1.mw{
 
 /*Content DIVs*/
 .content{
-	font-family: 'Open Sans', sans-serif;
 	padding-bottom: 30px;
 	margin-bottom: 20px;
 	background:#fff;
-	position:relative;
 	-webkit-border-radius:6px;
 	-moz-border-radius:6px;
 	border-radius:6px;
@@ -74,18 +113,19 @@ h1.mw{
 		line-height: 150%;
 	}
 		.content p span{
-			color: #2F5063;
+			color: #BA4B37;
 			font-weight: 400;
 		}
 		
 		/*LINKS*/
 		.content a:link{
-			color: #444;
+			font-weight: 500;
+			color: #BA4B37;
 			text-decoration: none;
 		}
 		
 		.content a:hover{
-			text-decoration: underline;
+			color: #999;
 		}
 		
 		/*LIST*/
@@ -100,12 +140,12 @@ h1.mw{
 		
 		.content li a:link{
 			text-decoration: none;
-			color: #999;
+			/*color: #999;*/
 		}
 		
 		.content li a:hover{
 			text-decoration: underline;
-			color: #000;
+			/*color: #000;*/
 		}
 
 /*Specific Content DIVs*/

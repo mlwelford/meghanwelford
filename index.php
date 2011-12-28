@@ -24,6 +24,7 @@
 	<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'376f0fc1-9bad-4a27-ac42-7d790c6a7b78'});</script>
 </head>
 <body>
+	<? include ('assets/php/header.php');?>
 	
 	<h1 class="mw">Meghan Welford</h1>
 	
@@ -32,14 +33,16 @@
 		<!-- MAIN CONTENT -->
 		<div class="content" id="main">
 			<h2>Under Construction</h2>
-			<p>My portfolio is Underway!  Please be patient.  <a href="mailto:mlwelford@gmail.com">Contact me</a> if you have any questions!</p>
+			<p>My portfolio is Underway!  Please be patient.  Any Questions? </p>
+			<p><a href="mailto:mlwelford@gmail.com">Contact Me &rarr;</a></p>
 		</div>
 		
 		<!-- PREVIEW -->
 		<div class="content" id="main">
 			<a href="http://css3.meghanwelford.com"><img src="assets/images/samples/border_radius.png" alt="Border Radius" width="100%"></a>
 			<h2>Preview</h2>
-			<p><a href="">Here's</a> something to keep you occupied!</p>
+			<p>It's not perfect, but here's a little taste of what I can do!</p>
+			<p><a href="">Check it out  &rarr;</a></p>
 		</div>
 		
 	</div>
@@ -55,9 +58,9 @@
 			<h3>Skills</h3>
 			<p>Training for <span>architecture</span>.  Passion for <span>design</span>.</p>
 			<ul>
-					<li><a href="">Architecture</a></li>
-					<li><a href="">Graphics</a></li>
-					<li><a href="">Web Design & Development</a></li>
+					<li><a href="">Architecture  &rarr;</a></li>
+					<li><a href="">Graphics  &rarr;</a></li>
+					<li><a href="">Web Design  &rarr;</a></li>
 			</ul>
 		</div>
 		

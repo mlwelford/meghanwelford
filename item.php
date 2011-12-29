@@ -56,7 +56,9 @@
 				<div class="left">
 					<div class="content" style="padding-bottom: 0;">
 					<a href="<? echo $i['link'];?>">
-					<img src="assets/images/<? echo $i['img'];?>" oncontextmenu="return false;" onBeginDrag="return FALSE ;">
+					<img src="assets/images/<? echo $i['img'];?>" 
+					oncontextmenu="return false;" 
+					onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false">
 					</a>
 					</div>
 				</div>

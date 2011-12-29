@@ -7,8 +7,11 @@
 	
 		<div class="content" id="main">
 			<? if($c['img']): ?>
-				<div class="image"><a href="item.php?cid=<? echo $c['id'];?>"><img src="assets/images/<? echo $c['img'];?>" 
-				alt="<? echo $c['title'];?>" width="100%" oncontextmenu="return false;"></a></div>
+				<div class="image"><a href="item.php?cid=<? echo $c['id'];?>">
+					<img src="assets/images/<? echo $c['img'];?>" 
+					alt="<? echo $c['title'];?>" width="100%" 
+					oncontextmenu="return false;" 
+					onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false"></a></div>
 			<? endif; ?>
 			<h2><? echo $c['heading'];?></h2>
 			<? echo $c['content'];?>

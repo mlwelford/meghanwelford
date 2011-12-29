@@ -7,14 +7,14 @@
 	<h3>Skills</h3>
 	<p>Training for <span>architecture</span>.  Passion for <span>design</span>.</p>
 	<ul>
-			<li><a href="">Architecture  &rarr;</a></li>
-			<li><a href="">Graphics  &rarr;</a></li>
-			<li><a href="">Web Design  &rarr;</a></li>
+			<li><a href="portfolio.php?c=arch">Architecture  &rarr;</a></li>
+			<li><a href="portfolio.php?c=graphic">Graphics  &rarr;</a></li>
+			<li><a href="portfolio.php?c=web">Web Design  &rarr;</a></li>
 	</ul>
 </div>
 
 <div class="content" style="text-align: center;">
-		<h3 class="share">Sharing is Caring</h3>
+	<h3 class="share">Sharing is Caring</h3>
 	<span  class='st_facebook_large' ></span>
 	<span  class='st_twitter_large' ></span>
 	<span  class='st_google_large' ></span>

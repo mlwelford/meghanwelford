@@ -14,6 +14,6 @@
 		</form>
 	</div>
 </div>
-<p class="caption">I admit, it wasn't all me. <a href="http://pehaa.com/2011/07/create-a-unique-contact-form-with-css3-transitions/" target="_blank">Source &rarr;</a></p>
+<p class="caption">I admit, this form wasn't all me. <a href="http://pehaa.com/2011/07/create-a-unique-contact-form-with-css3-transitions/" target="_blank">Source &rarr;</a></p>
 
 

@@ -56,7 +56,7 @@
 				<div class="left">
 					<div class="content" style="padding-bottom: 0;">
 					<a href="<? echo $i['link'];?>">
-					<img src="assets/images/<? echo $i['img'];?>" />
+					<img src="assets/images/<? echo $i['img'];?>" oncontextmenu="return false;" onBeginDrag="return FALSE ;">
 					</a>
 					</div>
 				</div>

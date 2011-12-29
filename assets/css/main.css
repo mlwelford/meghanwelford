@@ -21,6 +21,7 @@ body{
 
 /*Header*/
 ul.header{
+	z-index: 5;
 	display: block;
 	position:fixed;
 	top: 0;
@@ -60,7 +61,7 @@ ul.header{
 
 /*Meghan Welford Heading*/
 h1.mw{
-	margin: 30px 0;
+	margin: 30px 0 10px 0;
 	font-size: 500%;
 	font-weight: bold;
 	text-shadow: 2px 2px 0px rgba(255, 255, 255, 1);
@@ -131,6 +132,10 @@ h1.mw{
 		color: #999;
 		font-weight: 300;
 		line-height: 150%;
+	}
+	
+	.content p{
+		margin-bottom: 10px;
 	}
 		.content p span{
 			color: #BA4B37;

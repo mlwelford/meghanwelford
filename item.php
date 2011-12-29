@@ -43,7 +43,7 @@
 		include ('assets/php/header.php');
 	?>
 	
-	<h1 class="mw"><? if($content_id!=''){echo $content_id;}else{echo 'Meghan Welford';}?></h1>
+	<h1 class="mw"><? if($content_id!=''){echo content_heading($content_id);}else{echo 'Meghan Welford';}?></h1>
 	
 	<!-- LEFT COLUMN -->
 	
@@ -63,8 +63,11 @@
 				<!-- DESCRIPTION -->
 				<div class="right">
 					<div class="content">
-						<h3><? echo $i['title'];?></h3>
+						<h3 class="share"><? echo $i['title'];?></h3>
 						<? echo $i['description'];?>
+						<? if($i['link']): ?>
+						<p>To view this, <a href="<? echo $i['link'];?>">Click Here &rarr;</a></p>
+						<? endif;?>
 					</div>
 				</div>
 			</div>

@@ -23,6 +23,7 @@
 		
 	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/form.css">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Meghan Welford | Portfolio</title>
@@ -35,27 +36,16 @@
 	<!-- Share This Widget -->
 	<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">stLight.options({publisher:'376f0fc1-9bad-4a27-ac42-7d790c6a7b78'});</script>
+	
+	<script  src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
 </head>
 <body>
 	<?
 		include ('assets/php/header.php');
+		include ('assets/php/contact/submit.php');
+		include ('assets/php/contact/form.php');
 	?>
-	
-	<h1 class="mw">Meghan Welford</h1>
-	
-	
-	<!-- LEFT COLUMN -->
-	<div class="left">
-		<!-- MAIN CONTENT -->
-		<? 
-		$category = ''; $sort = '';
-		include('assets/php/content/content.php');?>
-	</div>
-	
-	<!-- RIGHT COLUMN -->
-	<div class="right">
-		<? include('assets/php/content/sidebar.php');?>
-	</div>
+		
 
 </body>
 </html>

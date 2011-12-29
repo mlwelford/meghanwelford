@@ -143,7 +143,7 @@ h1.mw{
 		}
 		
 		/*LINKS*/
-		.content a:link, .content a:visited{
+		.content a:link, .content a:visited, a:link, a:visited{
 			font-weight: 500;
 			color: #BA4B37;
 			text-decoration: none;
@@ -173,6 +173,13 @@ h1.mw{
 			/*color: #000;*/
 		}
 
+/*Caption*/
+	p.caption{
+		font-size: 50%;
+		margin: 20px auto;
+		text-align: center;
+	}
+
 /*Specific Content DIVs*/
 	.right{
 		width: 30%;
@@ -182,4 +189,59 @@ h1.mw{
 	.left{
 		width: 65%;
 		float: left;
+	}
+	
+/*@media queries for smartphones*/
+	@media only screen and (max-width: 855px){
+		body{
+			font-size: 1em;
+			width: 100%;
+			margin: auto;
+			padding: 0;
+		}
+		h1.mw{
+			font-size: 200%;
+			margin: 10px 0;
+			padding: 0;
+			font-weight: 300;
+		}
+		.right, .left{
+			width: 95%;
+			float: none;
+			margin: auto;
+		}
+		/*Header*/
+		ul.header{
+			display: block;
+			position:relative;	
+			width: 100%;
+			background: #222;
+			font-size: 75%;
+			-moz-opacity:.9; filter:alpha(opacity=90); opacity:.90;
+			border-bottom: thin solid #eee;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+		.header li{
+			border: 0;
+			padding: 5px 10px;
+			display: inline-block;
+			text-align: center;
+		}
+		
+		.header a:link, .header a:visited{
+			border: 0;
+			font-weight: 300;
+			display: inline;
+			text-transform: uppercase;
+			color: #aaa;
+			text-decoration: none;
+			padding: 5px;
+		}
+
+		.header a:hover{
+			color: #eee;
+
+		}
 	}

@@ -1,0 +1,134 @@
+form, fieldset, input, textarea {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush|News+Cycle|Quicksand:400,300,700|Josefin+Slab:600italic,600,300italic,400italic,400,700italic,100,100italic,700,300|Cabin:700,500,400,600,700italic,400italic,500italic,600italic|Questrial|Abel|Josefin+Sans:100italic,300italic,600,100,600italic,700italic,400italic,400,700,300|Petrona|Actor|Amaranth:400,700italic,700,400italic|Arizonia|Buda:300|Comfortaa:400,300,700|Cookie|Dancing+Script:700,400|Dawning+of+a+New+Day|Didact+Gothic|Francois+One|Gruppo|Jura:400,300,500,600|Open+Sans:400italic,700italic,800italic,300italic,600italic,400,800,700,600,300|Raleway:100|Squada+One|Terminal+Dosis:400,200,300,500,600,700,800|Varela|Varela+Round|Zeyada);
+
+#wrap {
+	width:530px; 
+	margin: auto; 
+	/*height:1000px;*/
+	}
+
+	#form_wrap { 
+		overflow:hidden; 
+		height:446px; 
+		position:relative; 
+		top:0px;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;
+		}
+	
+	#form_wrap:before {
+		content:"";
+		position:absolute;
+		bottom:128px;
+		left:0px;
+		background:url('../images/contact/before_orange.png');
+		width:530px;
+		height: 316px;
+		}
+	
+	#form_wrap:after {
+		content:"";
+		position:absolute;
+		bottom:0px;
+		left:0;
+		background:url('../images/contact/after_orange.png');
+		width:530px;
+		height: 260px; 
+		}
+
+	#form_wrap.hide:after, #form_wrap.hide:before {
+		display:none; 
+		}
+		
+	#form_wrap:hover {
+		height:776px;
+		top:-200px;
+		}
+
+	form {
+		color: #7c7873; 	
+		background: #efefef;		
+		/*background:#f7f2ec url('../images/contact/letter_bg.png'); */
+		position:relative;
+		top:200px;
+		overflow:hidden;
+		height:200px;
+		width:400px;
+		margin:0px auto;
+		padding:20px; 
+		border: 1px solid #fff;
+		border-radius: 3px; 
+		-moz-border-radius: 3px; 
+		-webkit-border-radius: 3px;
+		box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+		-webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+		-webkit-transition: all 1s ease-in-out .3s;
+		-moz-transition: all 1s ease-in-out .3s;
+		-o-transition: all 1s ease-in-out .3s;
+		transition: all 1s ease-in-out .3s;}
+		
+		#form_wrap p{
+			text-shadow:0 1px 0 #fff; 
+			font-size:24px;
+			margin-bottom: 10px;
+		}
+
+		#form_wrap:hover form {
+			height:530px;
+			}
+
+		label {
+			margin: 11px 20px 0 0; 
+			font-size: 16px; 
+			color: #ccc;
+			text-transform: uppercase; 
+			text-shadow: 0px 1px 0px #fff;
+		}
+
+		input[type=text], textarea {
+			font: 14px normal normal uppercase helvetica, arial, serif;
+			color: #7c7873;
+			background: #f9f9f9;
+			width: 380px; height: 36px; padding: 0px 10px; margin: 0 0 10px 0;
+			border:1px solid #eee;
+			-moz-border-radius: 5px; 
+			-webkit-border-radius: 5px; 
+			border-radius: 5px;
+			-moz-box-shadow: inset 0px 0px 1px #aaa;
+			-webkit-box-shadow:  inset 0px 0px 1px #aaa; 
+			box-shadow:  inset 0px 0px 1px #aaa;
+		}	
+
+		textarea { height: 80px; padding-top:14px;}
+
+		textarea:focus, input[type=text]:focus {background:rgba(255,255,255,1);}
+
+		#form_wrap input[type=submit] {
+			position:relative;
+			font-family: 'Open Sans', sans-serif;
+			font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;
+			width:100%; text-align:center;opacity:0;
+			background:none;
+			cursor: pointer;
+			-moz-border-radius: 3px; 
+			-webkit-border-radius: 3px; 
+			border-radius: 3px; 
+			-webkit-transition: opacity .6s ease-in-out 0s;
+			-moz-transition: opacity .6s ease-in-out 0s;
+			-o-transition: opacity .6s ease-in-out 0s;
+			transition: opacity .6s ease-in-out 0s;
+		}
+
+		#form_wrap:hover input[type=submit] {z-index:1;opacity:1;
+			-webkit-transition: opacity .5s ease-in-out 1.3s;
+			-moz-transition: opacity .5s ease-in-out 1.3s;
+			-o-transition: opacity .5s ease-in-out 1.3s;
+			transition: opacity .5s ease-in-out 1.3s;}
+
+			#form_wrap:hover input:hover[type=submit] {color:#435c70;}
